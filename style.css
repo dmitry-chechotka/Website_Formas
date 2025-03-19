@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the page takes up the full size of the monitor */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Basic body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container class for layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Footer styling */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Left block styling */
+.left-block {
+  width: 33.33%;
+  height: 100vh; /* Full height of the viewport */
+  background: linear-gradient(
+    to bottom,
+    #0084f8,
+    #00bdfe
+  ); /* Gradient from darker sky blue to light sky blue */
+  position: fixed; /* Lock the left block in place */
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main block styling */
+.main-block {
+  margin-left: 33.33%; /* Push it to the right of the left block */
+  padding: 5%; /* Add padding for consistent spacing */
+  background-color: #f4f4f4; /* Light gray background */
+  min-height: 100vh; /* Ensure it spans the full height of the viewport */
+  overflow: auto; /* Allow scrolling if content overflows */
+  position: relative; /* Ensure proper positioning for child elements */
+}
+
+/* Shared styling for hi-text blocks */
+.hi-text {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(0.8em, 2vw, 1.5em);
+  color: white;
+  padding: 0px;
+  background-color: transparent; /* Remove the background */
+  border-radius: 0; /* Remove rounded corners */
+  letter-spacing: 2px;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+  height: auto; /* Allow height to adjust based on content */
+  text-align: center; /* Center text alignment */
+  justify-content: center; /* Center text vertically */
+  align-items: center; /* Center text horizontally */
+}
+
+/* Center hi-text in the left block horizontally */
+.left-block .hi-text {
+  max-width: 80%; /* Limit width to 80% of the left block */
+}
+
+/* Align hi-text in the main block to the left */
+.main-block .hi-text {
+  text-align: left; /* Align text to the left */
+  justify-content: flex-start; /* Align text to the top */
+  align-items: flex-start; /* Align text to the left */
+  color: #0888f8; /* Change text color to a light blue */
+}
+
+/* Ensure h2 inside hi-text inherits the correct styles */
+.hi-text h2 {
+  font-family: "Nunito", sans-serif; /* Ensure Nunito is applied */
+  font-weight: 600; /* SemiBold */
+  font-size: clamp(0.8em, 5vw, 1.5em); /* Dynamically adjust font size */
+  margin: 0; /* Remove default margins */
+  display: block; /* Ensure each h2 is on its own line */
+  line-height: 1.2; /* Adjust line spacing for better readability */
+  white-space: nowrap; /* Prevent text from wrapping to a new line */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis if text overflows */
+}
+
+/* Add this CSS for the image */
+.klus-logo {
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  height: auto;
+}
+
+.info-text {
+  font-family: "Nunito", sans-serif; /* Match the font family */
+  font-weight: 600; /* Match the font weight */
+  font-style: normal; /* Match the font style */
+}
+
+/* Debug buttons styling */
+.debug-buttons {
+  position: static; /* Remove absolute positioning */
+  margin-top: 20px; /* Add spacing above the buttons */
+  display: flex; /* Arrange links horizontally */
+  gap: 10px; /* Add spacing between the links */
+  justify-content: flex-start; /* Align buttons to the left */
+}
+
+.debug-buttons a {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600; /* SemiBold */
+  text-decoration: none; /* Remove underline */
+  color: white; /* Link text color */
+  background-color: #1e90ff; /* Button background color */
+  padding: 10px 15px; /* Add padding to make it look like a button */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.debug-buttons a:hover {
+  background-color: #4682b4; /* Darker blue on hover */
+}
+
+/* Styling for the "Ziņot par kļūdu" button */
+.report-button {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600; /* SemiBold */
+  text-decoration: none; /* Remove underline */
+  color: white; /* White text */
+  background-color: #ff6666; /* Light red background */
+  padding: 10px 15px; /* Add padding for button-like appearance */
+  border: none; /* Remove any borders */
+  border-radius: 0; /* Straight corners */
+  position: absolute; /* Position relative to the main block */
+  bottom: 20px; /* 20px from the bottom of the main block */
+  right: 20px; /* 20px from the right of the main block */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.report-button:hover {
+  background-color: #ff4d4d; /* Slightly darker red on hover */
+}
+
+/* Add more styles as needed */
