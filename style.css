@@ -1,188 +1,259 @@
+/* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-/* Reset some default browser styles */
+/* Root variables */
+:root {
+  --primary-color: #0084f8;
+  --secondary-color: #00bdfe;
+  --text-color: #333;
+  --background-color: #f4f4f4;
+  --font-family: "Nunito", sans-serif;
+  --button-hover-color: #4682b4;
+  --error-color: #ff6666;
+}
+
+/* Reset and global styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Ensure the page takes up the full size of the monitor */
 html,
 body {
   height: 100%;
-  margin: 0;
-  padding: 0;
+  font-family: var(--font-family), Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
 }
 
-/* Basic body styling */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-/* Container class for layout */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Header styling */
-header {
-  background: #333;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
-}
-
-/* Footer styling */
+header,
 footer {
   background: #333;
   color: #fff;
   text-align: center;
   padding: 10px 0;
+}
+
+footer {
   position: fixed;
   bottom: 0;
   width: 100%;
 }
 
-/* Left block styling */
+/* Layout */
 .left-block {
   width: 33.33%;
-  height: 100vh; /* Full height of the viewport */
+  height: 100vh;
   background: linear-gradient(
     to bottom,
-    #0084f8,
-    #00bdfe
-  ); /* Gradient from darker sky blue to light sky blue */
-  position: fixed; /* Lock the left block in place */
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 3% 3% 3% 3%;
+  box-sizing: border-box;
 }
 
-/* Main block styling */
 .main-block {
-  margin-left: 33.33%; /* Push it to the right of the left block */
-  padding: 5%; /* Add padding for consistent spacing */
-  background-color: #f4f4f4; /* Light gray background */
-  min-height: 100vh; /* Ensure it spans the full height of the viewport */
-  overflow: auto; /* Allow scrolling if content overflows */
-  position: relative; /* Ensure proper positioning for child elements */
-}
-
-/* Shared styling for hi-text blocks */
-.hi-text {
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: clamp(0.8em, 2vw, 1.5em);
-  color: white;
-  padding: 0px;
-  background-color: transparent; /* Remove the background */
-  border-radius: 0; /* Remove rounded corners */
-  letter-spacing: 2px;
-  max-width: 90%;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin-left: 33.33%;
+  padding: 5%;
+  min-height: 100vh;
+  overflow: auto;
   display: flex;
   flex-direction: column;
-  height: auto; /* Allow height to adjust based on content */
-  text-align: center; /* Center text alignment */
-  justify-content: center; /* Center text vertically */
-  align-items: center; /* Center text horizontally */
+  justify-content: center;
+  align-items: flex-start;
 }
 
-/* Center hi-text in the left block horizontally */
-.left-block .hi-text {
-  max-width: 80%; /* Limit width to 80% of the left block */
+/* Typography */
+.hi-text {
+  font-weight: 600;
+  font-size: clamp(
+    1.8rem,
+    3vw,
+    2rem
+  ); /* Scales between 1.8rem and 2rem based on viewport width */
+  text-align: center;
+  letter-spacing: 2px;
+  max-width: 100%;
 }
 
-/* Align hi-text in the main block to the left */
-.main-block .hi-text {
-  text-align: left; /* Align text to the left */
-  justify-content: flex-start; /* Align text to the top */
-  align-items: flex-start; /* Align text to the left */
-  color: #0888f8; /* Change text color to a light blue */
-}
-
-/* Ensure h2 inside hi-text inherits the correct styles */
 .hi-text h2 {
-  font-family: "Nunito", sans-serif; /* Ensure Nunito is applied */
-  font-weight: 600; /* SemiBold */
-  font-size: clamp(0.8em, 5vw, 1.5em); /* Dynamically adjust font size */
-  margin: 0; /* Remove default margins */
-  display: block; /* Ensure each h2 is on its own line */
-  line-height: 1.2; /* Adjust line spacing for better readability */
-  white-space: nowrap; /* Prevent text from wrapping to a new line */
-  overflow: hidden; /* Hide overflowing text */
-  text-overflow: ellipsis; /* Add ellipsis if text overflows */
+  margin: 0;
+  line-height: 1.2;
+  /* Removed white-space: nowrap; */
+  overflow: visible; /* Prevent overflow */
+  text-overflow: ellipsis; /* No ellipsis or clipping */
+  display: inline-block; /* Required for scaling */
+  max-width: 100%; /* Ensure it respects the parent's width */
+  font-size: clamp(2.5rem, 5vw, 2.9rem); /* Scales between 2.5rem and 2.9rem */
 }
 
-/* Add this CSS for the image */
-.klus-logo {
-  display: block;
-  margin: 20px auto;
-  max-width: 80%;
-  height: auto;
+.left-block .hi-text {
+  color: white;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px; /* Fixed padding to maintain consistent spacing */
+  margin-bottom: 20px; /* Fixed margin to ensure constant distance */
+  font-size: clamp(1.2rem, 3vw, 2.5rem); /* Adjusted for larger emphasis */
 }
 
-.info-text {
-  font-family: "Nunito", sans-serif; /* Match the font family */
-  font-weight: 600; /* Match the font weight */
-  font-style: normal; /* Match the font style */
+.left-block .info-text {
+  text-align: center;
+  margin-top: 20px; /* Fixed margin to maintain consistent spacing */
+  color: white;
+  font-weight: 200;
+  font-size: 1.5rem; /* Fixed font size to prevent scaling */
 }
 
-/* Debug buttons styling */
-.debug-buttons {
-  position: static; /* Remove absolute positioning */
-  margin-top: 20px; /* Add spacing above the buttons */
-  display: flex; /* Arrange links horizontally */
-  gap: 10px; /* Add spacing between the links */
-  justify-content: flex-start; /* Align buttons to the left */
+.main-block .info-text {
+  text-align: left;
+  color: var(--text-color);
+  margin-top: 25px;
+  margin-bottom: 55px;
+  font-size: 1.3rem; /* Fixed font size to prevent scaling */
+  max-width: 47ch;
+  word-wrap: break-word;
 }
 
-.debug-buttons a {
-  font-family: "Nunito", sans-serif;
-  font-weight: 600; /* SemiBold */
-  text-decoration: none; /* Remove underline */
-  color: white; /* Link text color */
-  background-color: #1e90ff; /* Button background color */
-  padding: 10px 15px; /* Add padding to make it look like a button */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth hover effect */
+.main-block .hi-text {
+  text-align: left;
+  color: var(--primary-color);
+  font-size: clamp(1.2rem, 3vw, 2.5rem); /* Adjusted for emphasis */
 }
 
-.debug-buttons a:hover {
-  background-color: #4682b4; /* Darker blue on hover */
+/* Buttons */
+.login-buttons {
+  display: flex;
+  gap: 25px;
 }
 
-/* Styling for the "Ziņot par kļūdu" button */
+.login-buttons a,
 .report-button {
-  font-family: "Nunito", sans-serif;
-  font-weight: 600; /* SemiBold */
-  text-decoration: none; /* Remove underline */
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 0;
+  transition: background-color 0.3s ease;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+/* Styles for the login button */
+.login {
+  background-color: var(--primary-color); /* Default blue background */
   color: white; /* White text */
-  background-color: #ff6666; /* Light red background */
-  padding: 10px 15px; /* Add padding for button-like appearance */
-  border: none; /* Remove any borders */
-  border-radius: 0; /* Straight corners */
-  position: absolute; /* Position relative to the main block */
-  bottom: 20px; /* 20px from the bottom of the main block */
-  right: 20px; /* 20px from the right of the main block */
-  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.login:hover {
+  background-color: var(--button-hover-color); /* Hover effect */
+}
+
+/* Styles for the free-login button */
+.free-login {
+  background-color: white; /* Default white background */
+  color: var(--primary-color) !important; /* Blue text */
+  border: 1px solid var(--primary-color); /* Add a blue border */
+  box-sizing: border-box; /* Ensure the border doesn't affect the button size */
+}
+
+.free-login:hover {
+  background-color: #f0f0f0; /* Light gray on hover */
+}
+
+.report-button {
+  background-color: var(--error-color);
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 .report-button:hover {
-  background-color: #ff4d4d; /* Slightly darker red on hover */
+  background-color: #ff4d4d;
 }
 
-/* Add more styles as needed */
+/* Images */
+.klus-logo {
+  width: 100%; /* Default width to fill the parent */
+  min-width: 14em; /* Minimum size relative to the parent */
+  max-width: 25em; /* Optional: Set a maximum size to prevent excessive scaling */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 15%;
+  alt: "Logo of ĶLUS"; /* Add descriptive alt text for accessibility */
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    height: 100vh; /* Constrain the height to the viewport */
+    overflow: hidden; /* Prevent scrolling */
+  }
+
+  .left-block {
+    width: 100%; /* Make the left block take the full width */
+    height: 20vh; /* Adjust height to fit 20% of the viewport */
+    position: relative; /* Ensure it doesn't overlap */
+    z-index: 1; /* Keep it above other elements if needed */
+    padding: 4%; /* Adjust padding for spacing */
+  }
+
+  .main-block {
+    margin: 0 auto; /* Remove the left margin */
+    width: 90%; /* Ensure it takes the full width */
+    max-width: 30rem;
+    height: 80vh; /* Adjust height to fit 80% of the viewport */
+    padding: 7% 3% 0% 3%; /* Adjust padding for spacing */
+    position: relative; /* Ensure proper stacking */
+    top: 0; /* Reset any offset */
+    z-index: 0; /* Ensure it appears below the left-block */
+    overflow: hidden; /* Prevent scrolling within the block */
+    display: flex; /* Ensure flexbox layout */
+    flex-direction: column; /* Keep column layout */
+    justify-content: flex-start; /* Align content to the top */
+  }
+
+  .hi-text {
+    font-size: clamp(1.2rem, 4vw, 1.8rem); /* Smaller font size for mobile */
+    text-align: center;
+  }
+
+  .hi-text h2 {
+    font-size: clamp(1.8rem, 5vw, 2.2rem); /* Adjusted for better scaling */
+  }
+
+  .info-text {
+    font-size: clamp(1rem, 3vw, 1.4rem); /* Smaller font size for info-text */
+    text-align: center;
+  }
+
+  .left-block .hi-text,
+  .left-block .info-text {
+    display: none; /* Hide the hi-text and info-text in the left block */
+  }
+
+  .report-button {
+    position: fixed; /* Keep the button in view */
+    padding: 10px 15px;
+  }
+
+  .klus-logo {
+    all: unset; /* Reset all styles */
+    margin: 0; /* Remove the top margin */
+    max-height: 100%; /* Make the image fill the parent */
+    width: auto;
+  }
+}
