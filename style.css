@@ -35,6 +35,7 @@ body {
   padding: 20px;
 }
 
+/* Header and Footer */
 header,
 footer {
   background: #333;
@@ -65,7 +66,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3% 3% 3% 3%;
+  padding: 3%;
   box-sizing: border-box;
 }
 
@@ -83,11 +84,7 @@ footer {
 /* Typography */
 .hi-text {
   font-weight: 600;
-  font-size: clamp(
-    1.8rem,
-    3vw,
-    2rem
-  ); /* Scales between 1.8rem and 2rem based on viewport width */
+  font-size: clamp(1.8rem, 3vw, 2rem);
   text-align: center;
   letter-spacing: 2px;
   max-width: 100%;
@@ -96,36 +93,32 @@ footer {
 .hi-text h2 {
   margin: 0;
   line-height: 1.2;
-  /* Removed white-space: nowrap; */
-  overflow: visible; /* Prevent overflow */
-  text-overflow: ellipsis; /* No ellipsis or clipping */
-  display: inline-block; /* Required for scaling */
-  max-width: 100%; /* Ensure it respects the parent's width */
-  font-size: clamp(2.5rem, 5vw, 2.9rem); /* Scales between 2.5rem and 2.9rem */
+  display: inline-block;
+  max-width: 100%;
+  font-size: clamp(2.5rem, 5vw, 2.9rem);
 }
 
 .left-block .hi-text {
   color: white;
   border-bottom: 1px solid white;
-  padding-bottom: 20px; /* Fixed padding to maintain consistent spacing */
-  margin-bottom: 20px; /* Fixed margin to ensure constant distance */
-  font-size: clamp(1.2rem, 3vw, 2.5rem); /* Adjusted for larger emphasis */
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
 }
 
 .left-block .info-text {
   text-align: center;
-  margin-top: 20px; /* Fixed margin to maintain consistent spacing */
+  margin-top: 20px;
   color: white;
   font-weight: 200;
-  font-size: 1.5rem; /* Fixed font size to prevent scaling */
+  font-size: 1.5rem;
 }
 
 .main-block .info-text {
   text-align: left;
   color: var(--text-color);
-  margin-top: 25px;
-  margin-bottom: 55px;
-  font-size: 1.3rem; /* Fixed font size to prevent scaling */
+  margin: 25px 0 55px;
+  font-size: 1.3rem;
   max-width: 47ch;
   word-wrap: break-word;
 }
@@ -133,7 +126,7 @@ footer {
 .main-block .hi-text {
   text-align: left;
   color: var(--primary-color);
-  font-size: clamp(1.2rem, 3vw, 2.5rem); /* Adjusted for emphasis */
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
 }
 
 /* Buttons */
@@ -153,26 +146,23 @@ footer {
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
-/* Styles for the login button */
 .login {
-  background-color: var(--primary-color); /* Default blue background */
-  color: white; /* White text */
+  background-color: var(--primary-color);
 }
 
 .login:hover {
-  background-color: var(--button-hover-color); /* Hover effect */
+  background-color: var(--button-hover-color);
 }
 
-/* Styles for the free-login button */
 .free-login {
-  background-color: white; /* Default white background */
-  color: var(--primary-color) !important; /* Blue text */
-  border: 1px solid var(--primary-color); /* Add a blue border */
-  box-sizing: border-box; /* Ensure the border doesn't affect the button size */
+  background-color: white;
+  color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color);
+  box-sizing: border-box;
 }
 
 .free-login:hover {
-  background-color: #f0f0f0; /* Light gray on hover */
+  background-color: #f0f0f0;
 }
 
 .report-button {
@@ -188,72 +178,72 @@ footer {
 
 /* Images */
 .klus-logo {
-  width: 100%; /* Default width to fill the parent */
-  min-width: 14em; /* Minimum size relative to the parent */
-  max-width: 25em; /* Optional: Set a maximum size to prevent excessive scaling */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  min-width: 14em;
+  max-width: 25em;
+  height: auto;
   margin-top: 15%;
-  alt: "Logo of ĶLUS"; /* Add descriptive alt text for accessibility */
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   html,
   body {
-    height: 100vh; /* Constrain the height to the viewport */
-    overflow: hidden; /* Prevent scrolling */
+    height: 100vh;
+    overflow: hidden;
   }
 
   .left-block {
-    width: 100%; /* Make the left block take the full width */
-    height: 20vh; /* Adjust height to fit 20% of the viewport */
-    position: relative; /* Ensure it doesn't overlap */
-    z-index: 1; /* Keep it above other elements if needed */
-    padding: 4%; /* Adjust padding for spacing */
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    z-index: 1;
+    padding: 4%;
   }
 
   .main-block {
-    margin: 0 auto; /* Remove the left margin */
-    width: 90%; /* Ensure it takes the full width */
+    margin: 0 auto;
+    width: 90%;
     max-width: 30rem;
-    height: 80vh; /* Adjust height to fit 80% of the viewport */
-    padding: 7% 3% 0% 3%; /* Adjust padding for spacing */
-    position: relative; /* Ensure proper stacking */
-    top: 0; /* Reset any offset */
-    z-index: 0; /* Ensure it appears below the left-block */
-    overflow: hidden; /* Prevent scrolling within the block */
-    display: flex; /* Ensure flexbox layout */
-    flex-direction: column; /* Keep column layout */
-    justify-content: flex-start; /* Align content to the top */
+    height: 80vh;
+    padding: 7% 3% 0;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .hi-text {
-    font-size: clamp(1.2rem, 4vw, 1.8rem); /* Smaller font size for mobile */
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
     text-align: center;
   }
 
   .hi-text h2 {
-    font-size: clamp(1.8rem, 5vw, 2.2rem); /* Adjusted for better scaling */
+    font-size: clamp(1.8rem, 5vw, 2.2rem);
   }
 
   .info-text {
-    font-size: clamp(1rem, 3vw, 1.4rem); /* Smaller font size for info-text */
+    font-size: clamp(1rem, 3vw, 1.4rem);
     text-align: center;
   }
 
   .left-block .hi-text,
   .left-block .info-text {
-    display: none; /* Hide the hi-text and info-text in the left block */
+    display: none;
   }
 
   .report-button {
-    position: fixed; /* Keep the button in view */
+    position: fixed;
     padding: 10px 15px;
   }
 
   .klus-logo {
-    all: unset; /* Reset all styles */
-    margin: 0; /* Remove the top margin */
-    max-height: 100%; /* Make the image fill the parent */
+    all: unset;
+    margin: 0;
+    max-height: 100%;
     width: auto;
   }
 }
