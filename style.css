@@ -10,6 +10,13 @@
   --font-family: "Nunito", sans-serif;
   --button-hover-color: #4682b4;
   --error-color: #ff6666;
+  /* shared button settings */
+  --button-padding: 10px 20px;
+  --button-font-weight: 600;
+  --button-font-size: clamp(1rem, 2vw, 1.2rem);
+  --button-line-height: 1.2;
+  --button-border-radius: 0;
+  --button-transition: background-color 0.3s ease;
 }
 
 /* Reset and global styles */
@@ -27,6 +34,8 @@ body {
   color: var(--text-color);
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -79,6 +88,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin-top: 20px; /* Adjust as needed */
 }
 
 /* Typography */
@@ -121,6 +131,7 @@ footer {
   font-size: 1.3rem;
   max-width: 47ch;
   word-wrap: break-word;
+  font-weight: 400;
 }
 
 .main-block .hi-text {
@@ -137,13 +148,22 @@ footer {
 
 .login-buttons a,
 .report-button {
-  font-weight: 600;
+  display: inline-flex; /* Use inline-flex for better alignment */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  font-weight: var(--button-font-weight);
   text-decoration: none;
   color: white;
-  padding: 10px 20px;
-  border-radius: 0;
-  transition: background-color 0.3s ease;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  padding: var(--button-padding); /* Padding around the text */
+  border-radius: var(--button-border-radius);
+  transition: var(--button-transition);
+  font-size: var(--button-font-size);
+  line-height: var(--button-line-height); /* Ensure consistent line height */
+  text-align: center; /* Center-align multi-line text */
+  word-wrap: break-word; /* Allow text to wrap */
+  white-space: normal; /* Allow text to wrap onto multiple lines */
+  max-width: 100%; /* Ensure buttons don't exceed the container width */
+  box-sizing: border-box; /* Include padding in width calculations */
 }
 
 .login {
@@ -183,6 +203,68 @@ footer {
   max-width: 25em;
   height: auto;
   margin-top: 15%;
+}
+
+/* Login Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form label {
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.login-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+/* Styling the placeholder text */
+.login-form input::placeholder {
+  color: #aaa; /* Light gray color */
+}
+
+.login-form button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px 0px 0px 0px;
+  font-size: var(--button-font-size)
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 45%;
+  font-weight: var(--button-font-weight);
+  border-radius: var(--button-border-radius);
+}
+
+.login-form button:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Back Link */
+.back-link {
+  display: inline-block;
+  margin-bottom: 30px; /* Adjust spacing below the link */
+  font-size: 1rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  color: var(--text-color);
+}
+
+.back-link:hover {
+  color: var(--button-hover-color); /* Change color on hover */
 }
 
 /* Responsive Design */
@@ -245,5 +327,11 @@ footer {
     margin: 0;
     max-height: 100%;
     width: auto;
+  }
+
+  .login-buttons a,
+  .report-button {
+    padding: 8px 15px; /* Reduce padding for smaller screens */
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
   }
 }
