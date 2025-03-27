@@ -22,7 +22,9 @@
     <meta name="apple-mobile-web-app-title" content="KĻUS" />
     <link rel="manifest" href="/favicons/site.webmanifest" />
   </head>
+
   <body>
+    <!-- Left block -->
     <aside class="left-block">
       <div class="hi-text">
         <h2>Esi sveicināts<br />ĶLUS</h2>
@@ -31,12 +33,20 @@
       <img src="klus_logo.png" alt="KLUS Logo" class="klus-logo" />
     </aside>
 
+    <!-- Main block -->
     <main class="main-block">
+      <!-- Return back to index.html button -->
       <a href="index.html" class="back-link"> &#8592; Atpakaļ uz sākumlapu </a>
-      <div class="hi-text">
+
+      <!-- Info about the login page -->
+      <div class="hi-text login-hi-text">
         <h2>Pieslēgties</h2>
       </div>
-      <p class="info-text">Ķīmijas laboratorijas uzskaites sistēmai</p>
+      <p class="info-text login-info-text">
+        Ķīmijas laboratorijas uzskaites sistēmai
+      </p>
+
+      <!-- Login form -->
       <form class="login-form" action="dashboard.html" method="POST">
         <label for="username">Lietotājvārds</label>
         <input
@@ -56,8 +66,19 @@
           required
         />
 
-        <button type="submit" class="login">Pieslēgties</button>
+        <button type="submit" class="login-buttons">Pieslēgties</button>
       </form>
+
+      <!-- Register block -->
+      <div class="register-block">
+        <hr class="divider" />
+        <p class="register-text">
+          Neesi vēl reģistrēts?&nbsp;
+          <a href="register.html" class="register-link">Izveidot profilu</a>
+        </p>
+      </div>
+
+      <a href="report.html" class="report-button">Ziņot par kļūdu</a>
     </main>
   </body>
 </html>

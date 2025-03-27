@@ -13,7 +13,7 @@
   /* shared button settings */
   --button-padding: 10px 20px;
   --button-font-weight: 600;
-  --button-font-size: clamp(1rem, 2vw, 1.2rem);
+  --button-font-size: clamp(2vw);
   --button-line-height: 1.2;
   --button-border-radius: 0;
   --button-transition: background-color 0.3s ease;
@@ -24,6 +24,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border-radius: 4px;
 }
 
 html,
@@ -88,7 +89,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 20px; /* Adjust as needed */
 }
 
 /* Typography */
@@ -127,7 +127,7 @@ footer {
 .main-block .info-text {
   text-align: left;
   color: var(--text-color);
-  margin: 25px 0 55px;
+  margin: 25px 0 40px;
   font-size: 1.3rem;
   max-width: 47ch;
   word-wrap: break-word;
@@ -147,7 +147,8 @@ footer {
 }
 
 .login-buttons a,
-.report-button {
+.report-button,
+.login-form button {
   display: inline-flex; /* Use inline-flex for better alignment */
   align-items: center; /* Center text vertically */
   justify-content: center; /* Center text horizontally */
@@ -209,14 +210,22 @@ footer {
 .login-form {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 0px;
   width: 100%;
   max-width: 400px;
+}
+
+.login-info-text {
+  margin-top: 10px !important;
 }
 
 .login-form label {
   font-weight: 400;
   color: var(--text-color);
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-family: var(--font-family);
 }
 
 .login-form input {
@@ -238,13 +247,15 @@ footer {
   color: white;
   border: none;
   padding: 10px 20px;
-  margin: 20px 0px 0px 0px;
-  font-size: var(--button-font-size)
+  margin: 35px 0px 0px 0px;
+  font-size: var(--button-font-size);
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 45%;
   font-weight: var(--button-font-weight);
   border-radius: var(--button-border-radius);
+  border: none;
+  font-family: var(--font-family); /* Ensure consistent font-family */
 }
 
 .login-form button:hover {
@@ -254,7 +265,7 @@ footer {
 /* Back Link */
 .back-link {
   display: inline-block;
-  margin-bottom: 30px; /* Adjust spacing below the link */
+  margin-bottom: 60px; /* Adjust spacing below the link */
   font-size: 1rem;
   color: var(--primary-color);
   text-decoration: none;
@@ -265,6 +276,35 @@ footer {
 
 .back-link:hover {
   color: var(--button-hover-color); /* Change color on hover */
+}
+
+/* Register Block */
+.register-block {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.register-block .divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+  width: 140%;
+}
+
+.register-block .register-text {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.register-block .register-link {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register-block .register-link:hover {
+  color: var(--button-hover-color);
 }
 
 /* Responsive Design */
@@ -299,27 +339,29 @@ footer {
   }
 
   .hi-text {
-    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    font-size: clamp(1rem, 4vw, 1.8rem);
     text-align: center;
   }
 
   .hi-text h2 {
-    font-size: clamp(1.8rem, 5vw, 2.2rem);
+    font-size: clamp(2.2rem, 5vw, 2.6rem);
+    font-weight: 800;
   }
 
   .info-text {
-    font-size: clamp(1rem, 3vw, 1.4rem);
+    font-size: clamp(1.2rem, 3vw, 1.4rem) !important;
     text-align: center;
   }
 
   .left-block .hi-text,
-  .left-block .info-text {
+  .left-block .info-text,
+  .login-form label,
+  .login-info-text {
     display: none;
   }
 
   .report-button {
     position: fixed;
-    padding: 10px 15px;
   }
 
   .klus-logo {
@@ -329,9 +371,55 @@ footer {
     width: auto;
   }
 
-  .login-buttons a,
   .report-button {
-    padding: 8px 15px; /* Reduce padding for smaller screens */
+    padding: 0.4em 1em; /* Use relative padding based on content */
     font-size: 0.9rem; /* Adjust font size for smaller screens */
+    line-height: 2; /* Ensure proper spacing between lines */
+  }
+
+  .login-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px; /* Add spacing between buttons */
+    line-height: 2; /* Ensure proper spacing between lines */
+    font-size: 1.1rem !important; /* Adjust font size for smaller screens */
+  }
+
+  .info-text {
+    margin-bottom: 30px !important; /* Force smaller spacing below the info-text */
+    margin-top: 30px !important; /* Remove top margin */
+  }
+
+  .login-buttons {
+    margin-top: 5px; /* Reduce spacing above the buttons */
+    margin-bottom: -5px !important; /* Reduce spacing below the buttons */
+    width: 100%; /* Ensure buttons take full width */
+  }
+
+  .login-form {
+    margin-top: 5px !important; /* Reduce spacing between the form and the buttons */
+    gap: 10px; /* Add spacing between form elements */
+  }
+
+  .login-info-text {
+    margin-top: 10px !important;
+    margin-bottom: 20px !important; /* Remove bottom margin */
+  }
+
+  .login-hi-text {
+    margin-bottom: 20px !important;
+  }
+
+  .back-link {
+    margin-bottom: 25px; /* Adjust spacing below the link */
+  }
+
+  .register-block .divider {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .login-form button {
+    margin: 20px 0px 0px 0px;
+    width: 100%;
   }
 }
