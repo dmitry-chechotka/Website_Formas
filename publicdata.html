@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Publiskā datubāze</title>
     <link rel="stylesheet" href="style.css" />
     <!-- favicons -->
     <link
@@ -22,10 +22,110 @@
     <meta name="apple-mobile-web-app-title" content="KĻUS" />
     <link rel="manifest" href="/favicons/site.webmanifest" />
   </head>
-  <body>
-    <p>
-      This is the public data page. Here you can access the public data of the
-      laboratory. This is under development.
-    </p>
+  <body class="publicdata-page">
+    <div class="publicdata-container">
+      <!-- Back link -->
+      <a href="index.html" class="back-link"> &#8592; Atpakaļ uz sākumlapu </a>
+
+      <!-- Page title -->
+      <div class="hi-text">
+        <h2>Publiskā datubāze</h2>
+      </div>
+
+      <!-- Info text -->
+      <p
+        class="info-text"
+        style="border-bottom: 2px solid var(--secondary-color)"
+      >
+        Šajā datubāzē Tu vari apskatīt pieejamās vielas un aprīkojumu
+      </p>
+
+      <!-- Search and filter section -->
+      <div class="search-filter">
+        <input type="text" placeholder="Search" />
+        <button class="login">Rādīt visu</button>
+        <button class="free-login">Rādīt vielas</button>
+        <button class="free-login">Rādīt aprīkojumu</button>
+      </div>
+
+      <!-- Divider -->
+      <hr class="divider" />
+
+      <!-- Table -->
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nosaukums</th>
+              <th>Tips</th>
+              <th>Apakštips</th>
+              <th>Skaits</th>
+              <th>Svars</th>
+              <th>Komentāri</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Nātrija hlorīds</td>
+              <td>Viela</td>
+              <td>Sāls</td>
+              <td>50</td>
+              <td>500g</td>
+              <td>Laboratorijas vajadzībām</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Erlenmeijera kolba</td>
+              <td>Aprīkojums</td>
+              <td>Stikla trauks</td>
+              <td>20</td>
+              <td>-</td>
+              <td>Pieejams tikai ķīmijas kabinetā</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Etanols</td>
+              <td>Viela</td>
+              <td>Šķidrums</td>
+              <td>10</td>
+              <td>1L</td>
+              <td>Uzglabāt vēsā vietā</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Petri trauki</td>
+              <td>Aprīkojums</td>
+              <td>Plastmasa</td>
+              <td>100</td>
+              <td>-</td>
+              <td>Vienreizlietojami</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Sērskābe</td>
+              <td>Viela</td>
+              <td>Šķidrums</td>
+              <td>5</td>
+              <td>500ml</td>
+              <td>Ļoti kodīga</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Termometri</td>
+              <td>Aprīkojums</td>
+              <td>Instrumenti</td>
+              <td>15</td>
+              <td>-</td>
+              <td>Pieejami dažādi veidi</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Report a problem button -->
+      <a href="report.html" class="report-button">Ziņot par kļūdu</a>
+    </div>
   </body>
 </html>

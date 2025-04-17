@@ -51,7 +51,7 @@ footer {
   background: #333;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 0px 0;
 }
 
 footer {
@@ -275,7 +275,67 @@ footer {
 }
 
 .back-link:hover {
-  color: var(--button-hover-color); /* Change color on hover */
+  color: var(--button-hover-color);
+}
+
+/* Content container for publicdata.html */
+.publicdata-container {
+  margin: 100px auto; /* Add margins around the entire block */
+  padding: 10px;
+  max-width: 1200px; /* Optional: Limit the width for better layout */
+  box-sizing: border-box;
+}
+
+/* Specific styles for publicdata.html */
+.publicdata-page {
+  display: block; /* Override flex layout for this page */
+}
+
+/* Search and Filter Section */
+.search-filter {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.search-filter input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-filter button {
+  border-radius: 10px; /* Rounded buttons */
+}
+
+/* Table */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.table-container th {
+  background-color: #001b36;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.table-container td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.table-container tr:last-child td {
+  border-bottom: none; /* Remove border for the last row */
 }
 
 /* Register Block */
