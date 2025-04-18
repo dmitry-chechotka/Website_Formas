@@ -373,11 +373,18 @@ footer {
 }
 
 /* Table */
+.table-container {
+  border-radius: 0 !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
 .table-container table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 60px;
   background-color: white;
+  border-radius: 0 !important;
 }
 
 .table-container th {
@@ -385,6 +392,8 @@ footer {
   color: white;
   padding: 10px;
   text-align: left;
+  border-radius: 0 !important;
+  font-weight: 500;
 }
 
 .table-container td {
@@ -392,8 +401,19 @@ footer {
   border-bottom: 1px solid #ccc;
 }
 
-.table-container tr:last-child td {
-  border-bottom: none; /* Remove border for the last row */
+/* Center the "ID" column */
+.table-container th:first-child,
+.table-container td:first-child {
+  text-align: center;
+  /* Center the content of the first column */
+}
+
+.table-container td:first-child {
+  font-weight: 300;
+}
+
+.table-container td:nth-child(2) {
+  font-weight: 700;
 }
 
 /* Register Block */
