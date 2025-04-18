@@ -298,7 +298,7 @@ footer {
 
 .publicdata-info-text-divider {
     border: none;
-    border-top: 2px solid var(--primary-color);
+    border-top: 3px solid var(--primary-color);
     width: 440px;
     margin-top: -6px;
 }
@@ -361,11 +361,22 @@ footer {
 .search-input input::placeholder {
   color: #aaa; /* Light gray color */
 }
+
+.publicdata-search-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 100vw;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  margin-top: -6px;
+}
+
 /* Table */
 .table-container table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 60px;
   background-color: white;
 }
 
