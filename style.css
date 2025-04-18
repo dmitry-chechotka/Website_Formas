@@ -300,26 +300,37 @@ footer {
 .search-filter {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   margin: 20px 0;
   padding: 10px;
   border-radius: 10px;
 }
 
 .search-filter input {
-  flex: 0.5;
-  padding: 10px;
+  width: 375px;
+  padding: 6px;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 100px;
+  font-family: var(--font-family);
+  margin-right: 15px;
+  margin-left: -10px;
 }
-
-
 
 .search-filter button {
   border-radius: 100px; /* Rounded buttons */
-  padding: 10px;
-  flex: 0.1;
+  padding: 6px 20px;
+  font-size: 1rem;
+  font-family: var(--font-family);
+  transition: var(--button-transition);
+  text-align: center;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.search-filter .login{
+  color: white;
+  border: var(--primary-color) 1px solid;
 }
 
 .search-input {
@@ -336,13 +347,12 @@ footer {
 }
 
 .search-input input {
-  padding-left: 35px; /* Add space for the icon */
+  padding-left: 45px; /* Add space for the icon */
 }
 
 .search-input input::placeholder {
   color: #aaa; /* Light gray color */
 }
-
 /* Table */
 .table-container table {
   width: 100%;
