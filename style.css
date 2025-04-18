@@ -304,7 +304,6 @@ footer {
   margin: 20px 0;
   padding: 10px;
   border-radius: 10px;
-  background-color: #f9f9f9;
 }
 
 .search-filter input {
@@ -315,10 +314,33 @@ footer {
   border-radius: 100px;
 }
 
+
+
 .search-filter button {
   border-radius: 100px; /* Rounded buttons */
   padding: 10px;
   flex: 0.1;
+}
+
+.search-input {
+  position: relative;
+  display: inline-block;
+}
+
+.search-input i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #aaa; /* Adjust color as needed */
+}
+
+.search-input input {
+  padding-left: 35px; /* Add space for the icon */
+}
+
+.search-input input::placeholder {
+  color: #aaa; /* Light gray color */
 }
 
 /* Table */
