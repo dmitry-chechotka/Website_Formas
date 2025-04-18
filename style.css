@@ -296,6 +296,13 @@ footer {
   display: block; /* Override flex layout for this page */
 }
 
+.publicdata-info-text-divider {
+    border: none;
+    border-top: 2px solid var(--primary-color);
+    width: 440px;
+    margin-top: -6px;
+}
+
 /* Search and Filter Section */
 .search-filter {
   display: flex;
