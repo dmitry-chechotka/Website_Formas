@@ -134,10 +134,15 @@ footer {
   font-weight: 400;
 }
 
-.main-block .hi-text {
+.main-block .hi-text,
+.publicdata-page .hi-text {
   text-align: left;
   color: var(--primary-color);
   font-size: clamp(1.2rem, 3vw, 2.5rem);
+}
+
+.publicdata-page .hi-text {
+  margin-bottom : 20px;
 }
 
 /* Buttons */
@@ -303,15 +308,17 @@ footer {
 }
 
 .search-filter input {
-  flex: 1;
+  flex: 0.5;
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 100px;
 }
 
 .search-filter button {
-  border-radius: 10px; /* Rounded buttons */
+  border-radius: 100px; /* Rounded buttons */
+  padding: 10px;
+  flex: 0.1;
 }
 
 /* Table */
