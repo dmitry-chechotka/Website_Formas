@@ -380,6 +380,7 @@ footer {
 }
 
 .table-container table {
+  table-layout: auto;
   width: 100%;
   border-collapse: collapse;
   margin-top: 60px;
