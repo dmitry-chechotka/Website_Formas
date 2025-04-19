@@ -338,6 +338,11 @@ footer {
   letter-spacing: 0.05em;
 }
 
+.search-filter .button-group {
+  display: flex;
+  gap: 10px;
+}
+
 .search-filter .login{
   color: white;
   border: var(--primary-color) 1px solid;
