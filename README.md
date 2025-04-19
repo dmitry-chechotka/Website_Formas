@@ -1,14 +1,29 @@
 # Website_Formas
-## 3. pārbaudes darbs (PD_Formas)
+
+---
+
+## 🌐 Website Deployment:
+<p align="left">
+  <a href="https://dmitry-chechotka.github.io/Website_Formas/" target="_blank">
+    <img src="https://img.shields.io/badge/Website-Live-333333?style=flat-square" alt="Website Live Link" height="24">
+  </a>
+</p>
+
+---
+
+## Project Overview
+3. pārbaudes darbs (PD_Formas)
 For: Rīgas Komercskola
 
 Task: Reproduce the example website
 
 Note: To be updated towards 4. pārbaudes darbs - implement js features
 
+---
 
 
-### Task description:
+
+## Task Description:
 
 ```
 PD Formas
@@ -45,8 +60,8 @@ no 2. un 3. lapas uz 1.lapu (sākumu)
 
 ## Extra features implemented:
 
-- Support for all screen formats
-- Support for mobile devices
+- Responsive design for all screen sizes
+- Mobile device support
 
 ## Possible future updates for the project:
 
