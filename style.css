@@ -141,10 +141,6 @@ footer {
   font-size: clamp(1.2rem, 3vw, 2.5rem);
 }
 
-.publicdata-page .hi-text {
-  margin-bottom : 20px;
-}
-
 /* Buttons */
 .login-buttons {
   display: flex;
@@ -302,6 +298,11 @@ footer {
     border-top: 3px solid var(--primary-color);
     width: 440px;
     margin-top: -6px;
+}
+
+.publicdata-page .hi-text h2{
+  font-size: 2.5rem !important;
+  margin-bottom: 20px;
 }
 
 /* Search and Filter Section */
