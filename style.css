@@ -168,22 +168,26 @@ footer {
   box-sizing: border-box; /* Include padding in width calculations */
 }
 
-.login {
+.login,
+.button-group .show-everything {
   background-color: var(--primary-color);
 }
 
-.login:hover {
+.login:hover,
+.button-group .show-everything:hover {
   background-color: var(--button-hover-color);
 }
 
-.free-login {
+.free-login,
+.button-group .show-sort {
   background-color: white;
   color: var(--primary-color) !important;
   border: 1px solid var(--primary-color);
   box-sizing: border-box;
 }
 
-.free-login:hover {
+.free-login:hover,
+.button-group .show-sort:hover {
   background-color: #f0f0f0;
 }
 
@@ -343,7 +347,7 @@ footer {
   gap: 10px;
 }
 
-.search-filter .login{
+.search-filter .show-everything{
   color: white;
   border: var(--primary-color) 1px solid;
 }
