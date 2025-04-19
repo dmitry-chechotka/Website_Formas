@@ -334,6 +334,7 @@ footer {
   text-align: center;
   text-decoration: none;
   font-weight: 300;
+  letter-spacing: 0.05em;
 }
 
 .search-filter .login{
