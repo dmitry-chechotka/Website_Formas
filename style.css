@@ -193,10 +193,11 @@ footer {
 
 .report-button {
   background-color: var(--error-color);
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  position: fixed; /* Fix the button to the viewport */
+  bottom: 20px; /* Maintain the margin from the bottom */
+  right: 20px; /* Maintain the margin from the right */
   font-weight: 300;
+  z-index: 1000; /* Ensure it stays above other elements */
 }
 
 .report-button:hover {
@@ -271,7 +272,7 @@ footer {
 /* Back Link */
 .back-link {
   display: inline-block;
-  margin-bottom: 60px; /* Adjust spacing below the link */
+  margin-bottom: 30px; /* Adjust spacing below the link */
   font-size: 1rem;
   color: var(--primary-color);
   text-decoration: none;
@@ -286,7 +287,7 @@ footer {
 
 /* Content container for publicdata.html */
 .publicdata-container {
-  margin: 100px auto; /* Add margins around the entire block */
+  margin: 50px auto; /* Add margins around the entire block */
   padding: 10px 100px;
   max-width: 1300px; /* Optional: Limit the width for better layout */
   box-sizing: border-box;
@@ -388,6 +389,7 @@ footer {
   border-radius: 0 !important;
   font-weight: 500;
   font-size: 0.9rem;
+  margin-bottom: 100px;
 }
 
 .table-container table {
@@ -575,7 +577,7 @@ footer {
 
   /* publicdata.html handling */
   .publicdata-page {
-    min-height: calc(150vh) !important;
+    min-height: calc(110vh) !important;
     overflow: auto !important;
   }
 
