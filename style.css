@@ -458,7 +458,7 @@ footer {
   html,
   body {
     height: 100vh;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .left-block {
@@ -568,4 +568,43 @@ footer {
     margin: 20px 0px 0px 0px;
     width: 100%;
   }
+
+  /* publicdata.html handling */
+  .publicdata-page {
+    min-height: calc(150vh) !important;
+    overflow: auto !important;
+  }
+
+  .publicdata-search-divider {
+    width: 110%;
+    position: relative;
+    margin-bottom: -10px;
+    margin-left: -50px;
+  }
+
+  .publicdata-container {
+    width: 1300px;
+    margin: 50px 50px;
+    padding: 0;
+  }
+
+  .search-filter .button-group {
+    margin: 10px 0;
+  }
+
+  .publicdata-container .info-text {
+    font-size: 1.4rem !important;
+    text-align: left;
+    color: var(--text-color);
+  }
+
+  .publicdata-container .publicdata-info-text-divider {
+    width: 620px;
+    margin-top: -40px;
+  }
+
+  .publicdata-container .hi-text {
+    margin-bottom: -30px;
+  }
+
 }
