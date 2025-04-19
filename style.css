@@ -283,8 +283,8 @@ footer {
 /* Content container for publicdata.html */
 .publicdata-container {
   margin: 100px auto; /* Add margins around the entire block */
-  padding: 10px;
-  max-width: 1200px; /* Optional: Limit the width for better layout */
+  padding: 10px 100px;
+  max-width: 1300px; /* Optional: Limit the width for better layout */
   box-sizing: border-box;
 }
 
@@ -312,8 +312,8 @@ footer {
   gap: 10px;
   margin: 20px 0;
   margin-top: 30px;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 10px 0;
+  flex-wrap: wrap;
 }
 
 .search-filter input {
@@ -324,7 +324,6 @@ footer {
   border-radius: 100px;
   font-family: var(--font-family);
   margin-right: 15px;
-  margin-left: -10px;
 }
 
 .search-filter button {
