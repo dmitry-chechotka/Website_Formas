@@ -398,7 +398,7 @@ footer {
 
 .table-container td {
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 8px solid #F7F7F7;
 }
 
 /* Center the "ID" column */
