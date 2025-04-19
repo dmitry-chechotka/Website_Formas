@@ -9,7 +9,7 @@
   --background-color: #f4f4f4;
   --font-family: "Nunito", sans-serif;
   --button-hover-color: #4682b4;
-  --error-color: #ff6666;
+  --error-color: #ff8576;
   /* shared button settings */
   --button-padding: 10px 20px;
   --button-font-weight: 600;
@@ -51,7 +51,7 @@ footer {
   background: #333;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 0px 0;
 }
 
 footer {
@@ -134,7 +134,8 @@ footer {
   font-weight: 400;
 }
 
-.main-block .hi-text {
+.main-block .hi-text,
+.publicdata-page .hi-text {
   text-align: left;
   color: var(--primary-color);
   font-size: clamp(1.2rem, 3vw, 2.5rem);
@@ -167,22 +168,26 @@ footer {
   box-sizing: border-box; /* Include padding in width calculations */
 }
 
-.login {
+.login,
+.button-group .show-everything {
   background-color: var(--primary-color);
 }
 
-.login:hover {
+.login:hover,
+.button-group .show-everything:hover {
   background-color: var(--button-hover-color);
 }
 
-.free-login {
+.free-login,
+.button-group .show-sort {
   background-color: white;
   color: var(--primary-color) !important;
   border: 1px solid var(--primary-color);
   box-sizing: border-box;
 }
 
-.free-login:hover {
+.free-login:hover,
+.button-group .show-sort:hover {
   background-color: #f0f0f0;
 }
 
@@ -191,6 +196,7 @@ footer {
   position: absolute;
   bottom: 20px;
   right: 20px;
+  font-weight: 300;
 }
 
 .report-button:hover {
@@ -275,7 +281,151 @@ footer {
 }
 
 .back-link:hover {
-  color: var(--button-hover-color); /* Change color on hover */
+  color: var(--button-hover-color);
+}
+
+/* Content container for publicdata.html */
+.publicdata-container {
+  margin: 100px auto; /* Add margins around the entire block */
+  padding: 10px 100px;
+  max-width: 1300px; /* Optional: Limit the width for better layout */
+  box-sizing: border-box;
+}
+
+/* Specific styles for publicdata.html */
+.publicdata-page {
+  display: block; /* Override flex layout for this page */
+}
+
+.publicdata-info-text-divider {
+    border: none;
+    border-top: 3px solid var(--primary-color);
+    width: 440px;
+    margin-top: -6px;
+}
+
+.publicdata-page .hi-text h2{
+  font-size: 2.5rem !important;
+  margin-bottom: 20px;
+}
+
+/* Search and Filter Section */
+.search-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  margin-top: 30px;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.search-filter input {
+  width: 375px;
+  padding: 6px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  font-family: var(--font-family);
+  margin-right: 15px;
+}
+
+.search-filter button {
+  border-radius: 100px; /* Rounded buttons */
+  padding: 6px 20px;
+  font-size: 1rem;
+  font-family: var(--font-family);
+  transition: var(--button-transition);
+  text-align: center;
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.search-filter .button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.search-filter .show-everything{
+  color: white;
+  border: var(--primary-color) 1px solid;
+}
+
+.search-input {
+  position: relative;
+  display: inline-block;
+}
+
+.search-input i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #aaa; /* Adjust color as needed */
+}
+
+.search-input input {
+  padding-left: 45px; /* Add space for the icon */
+}
+
+.search-input input::placeholder {
+  color: #aaa; /* Light gray color */
+}
+
+.publicdata-search-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 100vw;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  margin-top: -6px;
+}
+
+/* Table */
+.table-container {
+  border-radius: 0 !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.table-container table {
+  table-layout: auto;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 60px;
+  background-color: white;
+  border-radius: 0 !important;
+}
+
+.table-container th {
+  background-color: #001b36;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  border-radius: 0 !important;
+  font-weight: 500;
+}
+
+.table-container td {
+  padding: 10px;
+  border-bottom: 8px solid #F7F7F7;
+}
+
+/* Center the "ID" column */
+.table-container th:first-child,
+.table-container td:first-child {
+  text-align: center;
+  /* Center the content of the first column */
+}
+
+.table-container td:first-child {
+  font-weight: 300;
+}
+
+.table-container td:nth-child(2) {
+  font-weight: 700;
 }
 
 /* Register Block */
@@ -312,7 +462,7 @@ footer {
   html,
   body {
     height: 100vh;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .left-block {
@@ -422,4 +572,43 @@ footer {
     margin: 20px 0px 0px 0px;
     width: 100%;
   }
+
+  /* publicdata.html handling */
+  .publicdata-page {
+    min-height: calc(150vh) !important;
+    overflow: auto !important;
+  }
+
+  .publicdata-search-divider {
+    width: 110%;
+    position: relative;
+    margin-bottom: -10px;
+    margin-left: -50px;
+  }
+
+  .publicdata-container {
+    width: 1300px;
+    margin: 50px 50px;
+    padding: 0;
+  }
+
+  .search-filter .button-group {
+    margin: 10px 0;
+  }
+
+  .publicdata-container .info-text {
+    font-size: 1.4rem !important;
+    text-align: left;
+    color: var(--text-color);
+  }
+
+  .publicdata-container .publicdata-info-text-divider {
+    width: 620px;
+    margin-top: -40px;
+  }
+
+  .publicdata-container .hi-text {
+    margin-bottom: -30px;
+  }
+
 }

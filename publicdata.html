@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Publiskā datubāze</title>
     <link rel="stylesheet" href="style.css" />
     <!-- favicons -->
     <link
@@ -21,11 +21,120 @@
     />
     <meta name="apple-mobile-web-app-title" content="KĻUS" />
     <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <p>
-      This is the public data page. Here you can access the public data of the
-      laboratory. This is under development.
-    </p>
+  <body class="publicdata-page">
+    <div class="publicdata-container">
+      <!-- Back link -->
+      <a href="index.html" class="back-link"> &#8592; Atpakaļ uz sākumlapu </a>
+
+      <!-- Page title -->
+      <div class="hi-text">
+        <h2>Publiskā datubāze</h2>
+      </div>
+
+      <!-- Info text -->
+      <p class="info-text">
+        Šajā datubāzē Tu vari apskatīt pieejamās vielas un aprīkojumu
+      </p>
+
+      <!-- Divider -->
+      <hr class="publicdata-info-text-divider" />
+
+      <!-- Search and filter section -->
+      <div class="search-filter">
+        <div class="search-input">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="button-group">
+          <button class="show-everything">Rādīt visu</button>
+          <button class="show-sort">Rādīt vielas</button>
+          <button class="show-sort">Rādīt aprīkojumu</button>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <hr class="publicdata-search-divider" />
+
+      <!-- Table -->
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nosaukums</th>
+              <th>Tips</th>
+              <th>Apakštips</th>
+              <th>Skaits</th>
+              <th>Svars</th>
+              <th>Komentāri</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>KL1042724</td>
+              <td>Katalizators</td>
+              <td>Aprīkojums</td>
+              <td>Trauks</td>
+              <td>23</td>
+              <td></td>
+              <td>Daži komentāri</td>
+            </tr>
+            <tr>
+              <td>KL1042723</td>
+              <td>Birete</td>
+              <td>Aprīkojums</td>
+              <td>Trauks</td>
+              <td>20</td>
+              <td></td>
+              <td>Daži komentāri</td>
+            </tr>
+            <tr>
+              <td>KL1042742</td>
+              <td>HCl</td>
+              <td>Viela</td>
+              <td>Skābe</td>
+              <td>19</td>
+              <td>40</td>
+              <td>Daži komentāri</td>
+            </tr>
+            <tr>
+              <td>KL1042724</td>
+              <td>Kolba</td>
+              <td>Aprīkojums</td>
+              <td>Trauks</td>
+              <td>20</td>
+              <td></td>
+              <td>Daži komentāri</td>
+            </tr>
+            <tr>
+              <td>KL1042534</td>
+              <td>Fe</td>
+              <td>Viela</td>
+              <td>Metāls</td>
+              <td>48</td>
+              <td>10</td>
+              <td>Daži komentāri</td>
+            </tr>
+            <tr>
+              <td>KL1442721</td>
+              <td>Na</td>
+              <td>Viela</td>
+              <td>Metāls</td>
+              <td>20</td>
+              <td>20</td>
+              <td>Daži komentāri</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Report a problem button -->
+      <a href="report.html" class="report-button">Ziņot par kļūdu</a>
+    </div>
   </body>
 </html>
