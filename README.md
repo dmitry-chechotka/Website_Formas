@@ -6,8 +6,8 @@
 
 ## 🌍 Table of Contents / Satura rādītājs
 
-- [English Version](#english-version)
-- [Latviešu Versija](#latvian-version)
+- [🇬🇧 English Version](#english-version)
+- [🇱🇻 Latviešu Versija](#latvian-version)
 <br/>
 
 ---
