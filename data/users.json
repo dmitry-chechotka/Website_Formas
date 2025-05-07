@@ -1,0 +1,12 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "vards": "Janis",
+            "uzvards": "Kociņš",
+            "loma": "admin",
+            "parole": "12",
+            "Komentāri": "Daži komentāri"
+        }
+    ]
+}

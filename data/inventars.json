@@ -1,0 +1,42 @@
+[
+    {
+      "apakstips": "mehāniskie svari",
+      "id": 1,
+      "komentari": "",
+      "nosaukums": "Mehāniskie svari QWS",
+      "skaits": 5,
+      "tips": "svari"
+    },
+    {
+      "apakstips": "elektroniskie svari",
+      "id": 2,
+      "komentari": "Darbojas uz 3 AAA tipa baterijām",
+      "nosaukums": "Elektroniskie svari ES-25",
+      "skaits": 15,
+      "tips": "svari"
+    },
+    {
+      "apakstips": "plītiņa",
+      "id": 3,
+      "komentari": "Strāvas vada garums 1m",
+      "nosaukums": "Elektriskā plītīņa",
+      "skaits": 8,
+      "tips": "sildītājs"
+    },
+    {
+      "apakstips": "trauki",
+      "id": 4,
+      "komentari": "Kolbas īpaši lielām vielām",
+      "nosaukums": "Milzīgās kolbas",
+      "skaits": 100,
+      "tips": "trauks"
+    },
+    {
+      "apakstips": "stikls",
+      "id": 5,
+      "komentari": "Viegli plīstoša",
+      "nosaukums": "Stikla mēģene",
+      "skaits": 12,
+      "tips": "trauks"
+    }
+  ]
