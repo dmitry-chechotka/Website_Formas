@@ -1,142 +1,192 @@
 [
-    {
-      "apakstips": "sāls",
-      "daudzums": 100,
-      "id": 2,
-      "komentari": "",
-      "mervienibas": "g",
-      "nosaukums": "Kalcija karbonāts CaCO3",
-      "skaits": 25,
-      "tips": "reaģents"
-    },
-    {
-      "apakstips": "hidroksīds",
-      "daudzums": 50,
-      "id": 3,
-      "komentari": "Šķīdums izvedots un sapildīts 2020.09.23",
-      "mervienibas": "ml",
-      "nosaukums": "NaOH šķīdums 10%",
-      "skaits": 45,
-      "tips": "reaģents"
-    },
-    {
-      "apakstips": "skābe",
-      "daudzums": 100,
-      "id": 4,
-      "komentari": "Šķīdums izvedots un sapildīts 2020.10.21",
-      "mervienibas": "ml",
-      "nosaukums": "Sālsskābes HCl šķīdums 20%",
-      "skaits": 24,
-      "tips": "reaģents"
-    },
-    {
-      "apakstips": "test1",
-      "daudzums": 50,
-      "id": 5,
-      "komentari": "Šķīdums izvedots un sapildīts 2020.09.23",
-      "mervienibas": "ml",
-      "nosaukums": "NaOH šķīdums 10%",
-      "skaits": 45,
-      "tips": "reaģents"
-    },
-    {
-      "apakstips": "hidroksīds",
-      "daudzums": 100,
-      "id": 6,
-      "komentari": "Šķīdums izvedots un sapildīts 2020.10.21",
-      "mervienibas": "ml",
-      "nosaukums": "NaOH šķīdums 20%",
-      "skaits": 413,
-      "tips": "reaģents"
-    },
-    {
-      "apakstips": "test2",
-      "daudzums": 50,
-      "id": 7,
-      "komentari": "Šķīdums izvedots un sapildīts lorem ipsum",
-      "mervienibas": "ml",
-      "nosaukums": "NaOH šķīdums 10%",
-      "skaits": 45,
-      "tips": "reaģents"
-    },
-    {
-      "apakstips": "test2",
-      "daudzums": 5,
-      "id": 8,
-      "komentari": "Šķīdums izvedots un sapildīts lorem ipsum",
-      "mervienibas": "ml",
-      "nosaukums": "Nosaukums lorem ipsum",
-      "skaits": 4,
-      "tips": "reaģents"
-    },
-    {
-      "apakstips": "test2",
-      "daudzums": 5,
-      "id": 9,
-      "komentari": "Šķīdums izvedots un sapildīts lorem ipsum",
-      "mervienibas": "ml",
-      "nosaukums": "Nosaukums lorem ipsum",
-      "skaits": 4,
-      "tips": "reaģents"
-    },
-    {
-      "apakstips": "test2",
-      "daudzums": 5,
-      "id": 10,
-      "komentari": "Šķīdums izvedots un sapildīts lorem ipsum",
-      "mervienibas": "ml",
-      "nosaukums": "Nosaukums lorem ipsum",
-      "skaits": 4,
-      "tips": "reaģents"
-    },
-    {
-      "apakstips": "test2",
-      "daudzums": 5,
-      "id": 11,
-      "komentari": "Šķīdums izvedots un sapildīts lorem ipsum",
-      "mervienibas": "ml",
-      "nosaukums": "Nosaukums lorem ipsum",
-      "skaits": 4,
-      "tips": "reaģents"
-    },
-    {
-      "apakstips": "test2",
-      "daudzums": 5,
-      "id": 12,
-      "komentari": "Šķīdums izvedots un sapildīts lorem ipsum",
-      "mervienibas": "ml",
-      "nosaukums": "Nosaukums lorem ipsum",
-      "skaits": 4,
-      "tips": "reaģents"
-    },
-    {
-      "apakstips": "test2",
-      "daudzums": 5,
-      "id": 13,
-      "komentari": "Šķīdums izvedots un sapildīts lorem ipsum",
-      "mervienibas": "ml",
-      "nosaukums": "Nosaukums lorem ipsum",
-      "skaits": 4,
-      "tips": "reaģents"
-    },
-    {
-      "apakstips": "test2",
-      "daudzums": 5,
-      "id": 14,
-      "komentari": "Šķīdums izvedots un sapildīts lorem ipsum",
-      "mervienibas": "ml",
-      "nosaukums": "Nosaukums lorem ipsum",
-      "skaits": 4,
-      "tips": "reaģents"
-    },
-    {
-      "apakstips": "test2",
-      "daudzums": 5,
-      "id": 15,
-      "komentari": "Šķīdums izvedots un sapildīts lorem ipsum",
-      "mervienibas": "ml",
-      "nosaukums": "Nosaukums lorem ipsum",
-      "skaits": 4,
-      "tips": "reaģents"
-    }
-  ]
+  {
+    "id": "VI0101001",
+    "tips": "Reaģents",
+    "apakstips": "Sāls",
+    "nosaukums": "Kalcija karbonāts (CaCO₃)",
+    "skaits": 25,
+    "daudzums": 100,
+    "mervienibas": "g",
+    "komentari": ""
+  },
+  {
+    "id": "VI0102001",
+    "tips": "Reaģents",
+    "apakstips": "Hidroksīds",
+    "nosaukums": "Nātrija hidroksīda (NaOH) šķīdums 10%",
+    "skaits": 45,
+    "daudzums": 50,
+    "mervienibas": "ml",
+    "komentari": "Šķīdums izveidots un sapildīts 2020.09.23"
+  },
+  {
+    "id": "VI0103001",
+    "tips": "Reaģents",
+    "apakstips": "Skābe",
+    "nosaukums": "Sālsskābes (HCl) šķīdums 20%",
+    "skaits": 24,
+    "daudzums": 100,
+    "mervienibas": "ml",
+    "komentari": "Šķīdums izveidots un sapildīts 2020.10.21"
+  },
+  {
+    "id": "VI0102002",
+    "tips": "Reaģents",
+    "apakstips": "Hidroksīds",
+    "nosaukums": "Nātrija hidroksīda (NaOH) šķīdums 20%",
+    "skaits": 413,
+    "daudzums": 100,
+    "mervienibas": "ml",
+    "komentari": "Šķīdums izveidots un sapildīts 2020.10.21"
+  },
+  {
+    "id": "VI0101002",
+    "tips": "Reaģents",
+    "apakstips": "Sāls",
+    "nosaukums": "Nātrija hlorīds (NaCl)",
+    "skaits": 56,
+    "daudzums": 500,
+    "mervienibas": "g",
+    "komentari": "Analītiski tīrs"
+  },
+  {
+    "id": "VI0101003",
+    "tips": "Reaģents",
+    "apakstips": "Sāls",
+    "nosaukums": "Kālija nitrāts (KNO₃)",
+    "skaits": 32,
+    "daudzums": 250,
+    "mervienibas": "g",
+    "komentari": "Uzglabāt sausā vietā"
+  },
+  {
+    "id": "VI0103002",
+    "tips": "Reaģents",
+    "apakstips": "Skābe",
+    "nosaukums": "Sērskābes (H₂SO₄) šķīdums 25%",
+    "skaits": 30,
+    "daudzums": 100,
+    "mervienibas": "ml",
+    "komentari": "Šķīdums izveidots un sapildīts 2021.03.15"
+  },
+  {
+    "id": "VI0104001",
+    "tips": "Reaģents",
+    "apakstips": "Oksīds",
+    "nosaukums": "Magnija oksīds (MgO)",
+    "skaits": 18,
+    "daudzums": 50,
+    "mervienibas": "g",
+    "komentari": "Pulveris, uzglabāt sausā vietā"
+  },
+  {
+    "id": "VI0105001",
+    "tips": "Reaģents",
+    "apakstips": "Indikators",
+    "nosaukums": "Fenolftaleīna šķīdums 1%",
+    "skaits": 15,
+    "daudzums": 25,
+    "mervienibas": "ml",
+    "komentari": "Krāsas maiņa pH 8.2-10.0, rozā"
+  },
+  {
+    "id": "VI0105002",
+    "tips": "Reaģents",
+    "apakstips": "Indikators",
+    "nosaukums": "Metiloranžas šķīdums 0.1%",
+    "skaits": 12,
+    "daudzums": 25,
+    "mervienibas": "ml",
+    "komentari": "Krāsas maiņa pH 3.1-4.4, sarkans-dzeltens"
+  },
+  {
+    "id": "VI0103003",
+    "tips": "Reaģents",
+    "apakstips": "Skābe",
+    "nosaukums": "Slāpekļskābes (HNO₃) šķīdums 15%",
+    "skaits": 18,
+    "daudzums": 100,
+    "mervienibas": "ml",
+    "komentari": "Šķīdums izveidots un sapildīts 2022.06.10"
+  },
+  {
+    "id": "VI0101004",
+    "tips": "Reaģents",
+    "apakstips": "Sāls",
+    "nosaukums": "Vara(II) sulfāts (CuSO₄·5H₂O)",
+    "skaits": 28,
+    "daudzums": 200,
+    "mervienibas": "g",
+    "komentari": "Zili kristāli, toksisks"
+  },
+  {
+    "id": "VI0201001",
+    "tips": "Šķīdinātājs",
+    "apakstips": "Organiskais",
+    "nosaukums": "Etanols 96%",
+    "skaits": 10,
+    "daudzums": 1000,
+    "mervienibas": "ml",
+    "komentari": "Uzliesmojošs, uzglabāt aizvērtā traukā"
+  },
+  {
+    "id": "VI0201002",
+    "tips": "Šķīdinātājs",
+    "apakstips": "Organiskais",
+    "nosaukums": "Acetons (C₃H₆O)",
+    "skaits": 8,
+    "daudzums": 500,
+    "mervienibas": "ml",
+    "komentari": "Ļoti uzliesmojošs, uzglabāt vēsā vietā"
+  },
+  {
+    "id": "VI0103004",
+    "tips": "Reaģents",
+    "apakstips": "Skābe",
+    "nosaukums": "Etiķskābes (CH₃COOH) šķīdums 80%",
+    "skaits": 15,
+    "daudzums": 250,
+    "mervienibas": "ml",
+    "komentari": "Kodīgs, izturīgs pret gaismu"
+  },
+  {
+    "id": "VI0106001",
+    "tips": "Reaģents",
+    "apakstips": "Metāls",
+    "nosaukums": "Cinka granulas (Zn)",
+    "skaits": 40,
+    "daudzums": 100,
+    "mervienibas": "g",
+    "komentari": "Tīrība 99.9%, uzglabāt sausā vietā"
+  },
+  {
+    "id": "VI0106002",
+    "tips": "Reaģents",
+    "apakstips": "Metāls",
+    "nosaukums": "Magnija lente (Mg)",
+    "skaits": 25,
+    "daudzums": 50,
+    "mervienibas": "g",
+    "komentari": "Uzliesmojošs kontaktā ar ūdeni"
+  },
+  {
+    "id": "VI0107001",
+    "tips": "Reaģents",
+    "apakstips": "Bāze",
+    "nosaukums": "Kālija hidroksīds (KOH)",
+    "skaits": 35,
+    "daudzums": 250,
+    "mervienibas": "g",
+    "komentari": "Higroskopisks, kodīgs"
+  },
+  {
+    "id": "VI0201003",
+    "tips": "Šķīdinātājs",
+    "apakstips": "Organiskais",
+    "nosaukums": "Propanols (C₃H₇OH)",
+    "skaits": 12,
+    "daudzums": 250,
+    "mervienibas": "ml",
+    "komentari": "Uzliesmojošs, uzglabāt vēsā vietā"
+  }
+]
