@@ -28,17 +28,17 @@
 
 ### Project Overview
 
-**3. pārbaudes darbs (PD_Formas)**  
-For: **Rīgas Komercskola**  
+**Assignment #3 & #4  
+(PD_Formas_1 & PD_Formas_2)**  
+For: **Riga Commerce School**  
 Task: **Reproduce the example website**  
-Note: **To be updated towards 4. pārbaudes darbs** - implement JS features
 
 ---
 
 ### Task Description:
 
 ```
-PD Formas
+PD_Formas_1
 
 Create 3 forms for the Chemistry Lab Recording System according to the templates provided in the PD_formas.pdf file.
 
@@ -48,6 +48,15 @@ Implement transitions:
 	•	from forms 2 and 3 back to form 1 (home)
 ```
 
+```
+PD_Formas_2
+
+Fill the forms from the previous task with data.
+
+Add the Inventory and Substances JSON data files in such a way that in the third form – in the table –
+When clicking on the selection Substances or Inventory, the corresponding substances or inventory items are filtered.
+When clicking on the Show All option, all entries should be visible.
+```
 ---
 
 ### Example Website Screenshots:
@@ -72,13 +81,14 @@ Implement transitions:
 
 - Responsive design for all screen sizes
 - Mobile device support
+- Search functionality inside the data table
 
 ---
 
 ### Possible Future Updates for the Project:
 
 - Add error-report feature
-- Add create-new-profile feature
+- Add a user registration feature
 - Add a separate page for signed-in users
 
 ---
@@ -101,17 +111,17 @@ Implement transitions:
 
 ### Projekta pārskats
 
-**3. pārbaudes darbs (PD_Formas)**  
+**3. & 4. pārbaudes darbs  
+(PD_Formas_1 & PD_Formas_2)**  
 Pēc: **Rīgas Komercskola**  
 Uzdevums: **Atveidot paraugu mājaslapu**  
-Piezīme: **Tiks atjaunināts uz 4. pārbaudes darbu** - JS funkcionalitātes ieviešana
 
 ---
 
 ### Uzdevuma apraksts:
 
 ```
-PD Formas
+PD_Formas_1
 
 Izveidot 3 formas Ķīmijas laboratorijas uzskaites sistēmai pēc dotajiem paraugiem datnē PD_formas.pdf
 
@@ -121,6 +131,15 @@ Izveidot pārejas:
 	•	no 2. un 3. lapas uz 1.lapu (sākumu)
 ```
 
+```
+PD_Formas_2
+
+Papildināt iepriekšējā uzdevuma formas ar datiem. 
+
+Pievienot Inventāra un Vielu datnes, tā, lai Trešajā formā - tabulā:
+Klikšķinot uz izvēles Vielas vai Inventārs, tiktu atlasītas attiecīgi vielas vai inventārs,
+Klikšķinot uz izvēles Rādīt visu, būs redzami visi ieraksti.
+```
 ---
 
 ### Piemēra mājaslapas ekrānšāviņi:
@@ -145,6 +164,7 @@ Izveidot pārejas:
 
 - Atbalsts visām ekrāna izšķirtspējām
 - Atbalsts mobilajām ierīcēm
+- Meklēšanas funkcija tabulā publicdata.html
 
 ---
 
@@ -152,4 +172,4 @@ Izveidot pārejas:
 
 - Pievienot kļūdu ziņošanas funkcionalitāti
 - Pievienot jauna profila izveides funkcionalitāti
-- Pievienot atsevišķu lapu parakstītajiem lietotājiem
+- Pievienot atsevišķu lapu autorizētajiem lietotājiem
