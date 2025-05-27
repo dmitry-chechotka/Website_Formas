@@ -1,0 +1,92 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "vards": "Janis",
+            "uzvards": "Kociņš",
+            "username": "admin",
+            "parole": "12",
+            "komentāri": "Daži komentāri"
+        },
+        {
+            "id": "2",
+            "vards": "Laura",
+            "uzvards": "Ziediņa",
+            "username": "lauraz",
+            "parole": "poga123",
+            "komentāri": "Patīk rozes un vaniļas saldējums"
+        },
+        {
+            "id": "3",
+            "vards": "Mārtiņš",
+            "uzvards": "Ozols",
+            "username": "martin_oz",
+            "parole": "mezaVelns",
+            "komentāri": "Bieži lasa grāmatas vilcienā"
+        },
+        {
+            "id": "4",
+            "vards": "Elīna",
+            "uzvards": "Kalniņa",
+            "username": "elikalns",
+            "parole": "saule456",
+            "komentāri": "Nekad nav ēdusi avokado"
+        },
+        {
+            "id": "5",
+            "vards": "Rihards",
+            "uzvards": "Liepiņš",
+            "username": "riko99",
+            "parole": "parole123",
+            "komentāri": "Izdomāja savu valodu bērnībā"
+        },
+        {
+            "id": "6",
+            "vards": "Anna",
+            "uzvards": "Dūja",
+            "username": "annadove",
+            "parole": "burunduks7",
+            "komentāri": "Sapņo kļūt par astronauti"
+        },
+        {
+            "id": "7",
+            "vards": "Toms",
+            "uzvards": "Bērziņš",
+            "username": "tomberry",
+            "parole": "tom123",
+            "komentāri": "Mākslas galeriju fans"
+        },
+        {
+            "id": "8",
+            "vards": "Ieva",
+            "uzvards": "Sirma",
+            "username": "ievux",
+            "parole": "ievacool",
+            "komentāri": "Spēlē ukuleli pie ezera"
+        },
+        {
+            "id": "9",
+            "vards": "Dainis",
+            "uzvards": "Gailis",
+            "username": "daigai",
+            "parole": "gaileens",
+            "komentāri": "Uzskata, ka kefīrs ir nenovērtēts"
+        },
+        {
+            "id": "10",
+            "vards": "Kristīne",
+            "uzvards": "Vilciņa",
+            "username": "kristy",
+            "parole": "vilks123",
+            "komentāri": "Vienreiz satika pūci Rīgā"
+        },
+        {
+            "id": "11",
+            "vards": "Artūrs",
+            "uzvards": "Krūmiņš",
+            "username": "arthur_k",
+            "parole": "kakis2025",
+            "komentāri": "Domā, ka viņš bija ēzelis iepriekšējā dzīvē"
+        }
+    ]
+}

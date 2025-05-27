@@ -1,0 +1,163 @@
+[
+  {
+    "id": "IN0101001",
+    "tips": "Svari",
+    "apakstips": "Mehāniskie svari",
+    "nosaukums": "Mehāniskie svari QWS",
+    "skaits": 5,
+    "komentari": ""
+  },
+  {
+    "id": "IN0301001",
+    "tips": "Trauks",
+    "apakstips": "Trauki",
+    "nosaukums": "Liela izmēra kolbas",
+    "skaits": 100,
+    "komentari": "Kolbas īpaši lielām vielām"
+  },
+  {
+    "id": "IN0102001",
+    "tips": "Svari",
+    "apakstips": "Elektroniskie svari",
+    "nosaukums": "Elektroniskie svari ES-25",
+    "skaits": 15,
+    "komentari": "Darbojas uz 3 AAA tipa baterijām"
+  },
+  {
+    "id": "IN0201001",
+    "tips": "Sildītājs",
+    "apakstips": "Plītiņa",
+    "nosaukums": "Elektriskā plītiņa",
+    "skaits": 8,
+    "komentari": "Strāvas vada garums 1m"
+  },
+
+  {
+    "id": "IN0302001",
+    "tips": "Trauks",
+    "apakstips": "Stikls",
+    "nosaukums": "Stikla mēģene",
+    "skaits": 12,
+    "komentari": ""
+  },
+  {
+    "id": "IN0102002",
+    "tips": "Svari",
+    "apakstips": "Elektroniskie svari",
+    "nosaukums": "Precīzie elektroniskie svari EP-100",
+    "skaits": 3,
+    "komentari": "Precizitāte līdz 0.001g"
+  },
+  {
+    "id": "IN0103001",
+    "tips": "Svari",
+    "apakstips": "Digitālie svari",
+    "nosaukums": "Digitālie svari ar Bluetooth DS-500",
+    "skaits": 2,
+    "komentari": ""
+  },
+  {
+    "id": "IN0201002",
+    "tips": "Sildītājs",
+    "apakstips": "Plītiņa",
+    "nosaukums": "Regulējamā plītiņa RP-200",
+    "skaits": 5,
+    "komentari": "Temperatūras regulēšana 50-300°C"
+  },
+  {
+    "id": "IN0202001",
+    "tips": "Sildītājs",
+    "apakstips": "Bunzena deglis",
+    "nosaukums": "Bunzena deglis BD-01",
+    "skaits": 10,
+    "komentari": "Savienojams ar dabas gāzes avotu"
+  },
+  {
+    "id": "IN0202002",
+    "tips": "Sildītājs",
+    "apakstips": "Bunzena deglis",
+    "nosaukums": "Portatīvais Bunzena deglis PBD-50",
+    "skaits": 4,
+    "komentari": "Darbojas ar butāna gāzes patronām"
+  },
+  {
+    "id": "IN0301002",
+    "tips": "Trauks",
+    "apakstips": "Trauki",
+    "nosaukums": "Vidēja izmēra kolbas (250ml)",
+    "skaits": 75,
+    "komentari": "Standarta laboratorijas kolbas"
+  },
+  {
+    "id": "IN0302002",
+    "tips": "Trauks",
+    "apakstips": "Stikls",
+    "nosaukums": "Erlenmejera kolbas",
+    "skaits": 30,
+    "komentari": "Dažādi izmēri (100ml-500ml)"
+  },
+  {
+    "id": "IN0303001",
+    "tips": "Trauks",
+    "apakstips": "Kristalizācijas trauks",
+    "nosaukums": "Kristalizācijas trauki K1",
+    "skaits": 15,
+    "komentari": "Diametrs 10cm, augstums 5cm"
+  },
+  {
+    "id": "IN0304001",
+    "tips": "Trauks",
+    "apakstips": "Mērtrauks",
+    "nosaukums": "Mērkolbas (100ml)",
+    "skaits": 25,
+    "komentari": ""
+  },
+  {
+    "id": "IN0401001",
+    "tips": "Mērierīce",
+    "apakstips": "Termometrs",
+    "nosaukums": "Dzīvsudraba termometrs (-10°C-110°C)",
+    "skaits": 20,
+    "komentari": "Klasiskais laboratorijas termometrs"
+  },
+  {
+    "id": "IN0402001",
+    "tips": "Mērierīce",
+    "apakstips": "PH metrs",
+    "nosaukums": "Digitālais pH metrs PH-200",
+    "skaits": 5,
+    "komentari": "Kalibrēts, ar nomaināmu elektrodu"
+  },
+  {
+    "id": "IN0501001",
+    "tips": "Aizsardzība",
+    "apakstips": "Laboratorijas halāts",
+    "nosaukums": "Balts laboratorijas halāts (L)",
+    "skaits": 25,
+    "komentari": ""
+  },
+  {
+    "id": "IN0502001",
+    "tips": "Aizsardzība",
+    "apakstips": "Cimdi",
+    "nosaukums": "Nitrila cimdi (M)",
+    "skaits": 500,
+    "komentari": "Vienreizlietojami, 100 gab. kastē"
+  },
+  {
+    "id": "IN0503001",
+    "tips": "Aizsardzība",
+    "apakstips": "Aizsargbrilles",
+    "nosaukums": "Laboratorijas aizsargbrilles",
+    "skaits": 30,
+    "komentari": "Caurspīdīgas, ar sānu aizsardzību"
+  },
+  {
+    "id": "IN0601001",
+    "tips": "Maisītājs",
+    "apakstips": "Magnētiskais maisītājs",
+    "nosaukums": "Magnētiskais maisītājs MM-100",
+    "skaits": 8,
+    "komentari": "Ātrums regulējams 100-1500 apgr./min"
+  }
+]

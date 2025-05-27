@@ -48,12 +48,14 @@
       <div class="search-filter">
         <div class="search-input">
           <i class="fas fa-search"></i>
-          <input type="text" placeholder="Search" />
+          <input id="search-box" type="text" placeholder="Search" />
         </div>
         <div class="button-group">
-          <button class="show-everything">Rādīt visu</button>
-          <button class="show-sort">Rādīt vielas</button>
-          <button class="show-sort">Rādīt aprīkojumu</button>
+          <button id="show-both" class="show-everything">Rādīt visu</button>
+          <button id="show-vielas" class="show-sort">Rādīt vielas</button>
+          <button id="show-inventars" class="show-sort">
+            Rādīt aprīkojumu
+          </button>
         </div>
       </div>
 
@@ -62,79 +64,16 @@
 
       <!-- Table -->
       <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Nosaukums</th>
-              <th>Tips</th>
-              <th>Apakštips</th>
-              <th>Skaits</th>
-              <th>Svars</th>
-              <th>Komentāri</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>KL1042724</td>
-              <td>Katalizators</td>
-              <td>Aprīkojums</td>
-              <td>Trauks</td>
-              <td>23</td>
-              <td></td>
-              <td>Daži komentāri</td>
-            </tr>
-            <tr>
-              <td>KL1042723</td>
-              <td>Birete</td>
-              <td>Aprīkojums</td>
-              <td>Trauks</td>
-              <td>20</td>
-              <td></td>
-              <td>Daži komentāri</td>
-            </tr>
-            <tr>
-              <td>KL1042742</td>
-              <td>HCl</td>
-              <td>Viela</td>
-              <td>Skābe</td>
-              <td>19</td>
-              <td>40</td>
-              <td>Daži komentāri</td>
-            </tr>
-            <tr>
-              <td>KL1042724</td>
-              <td>Kolba</td>
-              <td>Aprīkojums</td>
-              <td>Trauks</td>
-              <td>20</td>
-              <td></td>
-              <td>Daži komentāri</td>
-            </tr>
-            <tr>
-              <td>KL1042534</td>
-              <td>Fe</td>
-              <td>Viela</td>
-              <td>Metāls</td>
-              <td>48</td>
-              <td>10</td>
-              <td>Daži komentāri</td>
-            </tr>
-            <tr>
-              <td>KL1442721</td>
-              <td>Na</td>
-              <td>Viela</td>
-              <td>Metāls</td>
-              <td>20</td>
-              <td>20</td>
-              <td>Daži komentāri</td>
-            </tr>
-          </tbody>
+        <table id="data-table">
+          <thead></thead>
+          <tbody></tbody>
         </table>
       </div>
 
       <!-- Report a problem button -->
       <a href="report.html" class="report-button">Ziņot par kļūdu</a>
     </div>
+
+    <script src="data_fetch.js"></script>
   </body>
 </html>
