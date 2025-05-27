@@ -1,61 +1,133 @@
-// Define which columns to render and how to extract values from each row
-const columnExtractors = [
-  (row) => row.id ?? '',
-  (row) => row.nosaukums ?? '',
-  (row) => row.tips ?? '',
-  (row) => row.apakstips ?? '',
-  (row) => row.skaits ?? '',
-  (row) => {
-    const daudzums = row.daudzums ?? '';
-    const mervienibas = row.mervienibas ?? '';
-    return daudzums || mervienibas ? `${daudzums} ${mervienibas}`.trim() : '';
-  },
-  (row) => row.komentari ?? '',
-];
+const dataCache = {
+  vielas: [],
+  inventars: [],
+};
 
-// List of data sources to fetch and render
-const dataSources = ['/data/vielas.json', '/data/inventars.json'];
+const headerLabels = {
+  id: 'ID',
+  tips: 'Tips',
+  apakstips: 'Apakštips',
+  nosaukums: 'Nosaukums',
+  skaits: 'Skaits',
+  daudzums: 'Daudzums',
+  mervienibas: 'Mērvienības',
+  komentari: 'Komentāri',
+};
 
-// Function to fetch a JSON file and render its data into the table
-/**
- * Description
- * @param {any} url
- * @returns {any}
- * TODO:
- * Change this in a shorter and more readable way.
- * - You can just add the Mērvienības as an extra column in the html,
- * or just put both values as a single string in the jsons
- * - Or think of new logic
- *
- */
+let currentView = 'both';
+let currentSearch = '';
 
-function fetchAndRenderData(url) {
-  fetch(url)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`Failed to fetch ${url}`);
-      }
-      return response.json();
+function fetchData() {
+  Promise.all([
+    fetch('/data/vielas.json').then((r) => r.json()),
+    fetch('/data/inventars.json').then((r) => r.json()),
+  ])
+    .then(([vielas, inventars]) => {
+      dataCache.vielas = vielas;
+      dataCache.inventars = inventars;
+      render();
     })
-    .then((data) => {
-      const tableBody = document.querySelector('#data-table tbody');
-
-      data.forEach((row) => {
-        const tr = document.createElement('tr');
-
-        columnExtractors.forEach((extractor) => {
-          const td = document.createElement('td');
-          td.textContent = extractor(row);
-          tr.appendChild(td);
-        });
-
-        tableBody.appendChild(tr);
-      });
-    })
-    .catch((error) => {
-      console.error(`Error loading ${url}:`, error);
+    .catch((err) => {
+      console.error('Error loading data:', err);
     });
 }
 
-// Fetch and render data from each source
-dataSources.forEach(fetchAndRenderData);
+function render() {
+  let data = [];
+
+  if (currentView === 'vielas') {
+    data = dataCache.vielas;
+  } else if (currentView === 'inventars') {
+    data = dataCache.inventars;
+  } else {
+    data = [...dataCache.vielas, ...dataCache.inventars];
+  }
+
+  // Apply search filter
+  if (currentSearch.trim()) {
+    const query = currentSearch.toLowerCase();
+    data = data.filter((row) =>
+      Object.values(row).some((val) =>
+        String(val).toLowerCase().includes(query)
+      )
+    );
+  }
+
+  // Sort by ID (string sort works because your IDs are structured)
+  data.sort((a, b) => a.id.localeCompare(b.id));
+
+  renderTable(data);
+}
+
+function renderTable(data) {
+  const table = document.getElementById('data-table');
+  const thead = table.querySelector('thead');
+  const tbody = table.querySelector('tbody');
+
+  tbody.innerHTML = '';
+  thead.innerHTML = '';
+
+  if (!data.length) {
+    thead.innerHTML = '<tr><th>No data</th></tr>';
+    return;
+  }
+
+  // Define the full column order explicitly
+  const columns = [
+    'id',
+    'tips',
+    'apakstips',
+    'nosaukums',
+    'skaits',
+    'daudzums',
+    'mervienibas',
+    'komentari',
+  ];
+
+  // Build header
+  const headerRow = document.createElement('tr');
+  columns.forEach((key) => {
+    const th = document.createElement('th');
+    th.textContent = headerLabels[key] || key;
+    headerRow.appendChild(th);
+  });
+  thead.appendChild(headerRow);
+
+  // Build rows
+  data.forEach((row) => {
+    const tr = document.createElement('tr');
+    columns.forEach((key) => {
+      const td = document.createElement('td');
+      td.textContent = row[key] ?? '';
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
+}
+
+function capitalize(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+// Event listeners for buttons
+document.getElementById('show-vielas').addEventListener('click', () => {
+  currentView = 'vielas';
+  render();
+});
+
+document.getElementById('show-inventars').addEventListener('click', () => {
+  currentView = 'inventars';
+  render();
+});
+
+document.getElementById('show-both').addEventListener('click', () => {
+  currentView = 'both';
+  render();
+});
+
+document.getElementById('search-box').addEventListener('input', (e) => {
+  currentSearch = e.target.value;
+  render();
+});
+
+fetchData();

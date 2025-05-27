@@ -48,12 +48,14 @@
       <div class="search-filter">
         <div class="search-input">
           <i class="fas fa-search"></i>
-          <input type="text" placeholder="Search" />
+          <input id="search-box" type="text" placeholder="Search" />
         </div>
         <div class="button-group">
-          <button class="show-everything">Rādīt visu</button>
-          <button class="show-sort">Rādīt vielas</button>
-          <button class="show-sort">Rādīt aprīkojumu</button>
+          <button id="show-both" class="show-everything">Rādīt visu</button>
+          <button id="show-vielas" class="show-sort">Rādīt vielas</button>
+          <button id="show-inventars" class="show-sort">
+            Rādīt aprīkojumu
+          </button>
         </div>
       </div>
 
@@ -63,17 +65,7 @@
       <!-- Table -->
       <div class="table-container">
         <table id="data-table">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Nosaukums</th>
-              <th>Tips</th>
-              <th>Apakštips</th>
-              <th>Skaits</th>
-              <th>Lielums</th>
-              <th>Komentāri</th>
-            </tr>
-          </thead>
+          <thead></thead>
           <tbody></tbody>
         </table>
       </div>
