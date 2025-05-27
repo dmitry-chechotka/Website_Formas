@@ -19,8 +19,8 @@ let currentSearch = '';
 
 function fetchData() {
   Promise.all([
-    fetch('/data/vielas.json').then((r) => r.json()),
-    fetch('/data/inventars.json').then((r) => r.json()),
+    fetch('data/vielas.json').then((r) => r.json()),
+    fetch('data/inventars.json').then((r) => r.json()),
   ])
     .then(([vielas, inventars]) => {
       dataCache.vielas = vielas;
