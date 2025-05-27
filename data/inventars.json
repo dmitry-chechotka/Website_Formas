@@ -8,6 +8,14 @@
     "komentari": ""
   },
   {
+    "id": "IN0301001",
+    "tips": "Trauks",
+    "apakstips": "Trauki",
+    "nosaukums": "Liela izmēra kolbas",
+    "skaits": 100,
+    "komentari": "Kolbas īpaši lielām vielām"
+  },
+  {
     "id": "IN0102001",
     "tips": "Svari",
     "apakstips": "Elektroniskie svari",
@@ -23,21 +31,14 @@
     "skaits": 8,
     "komentari": "Strāvas vada garums 1m"
   },
-  {
-    "id": "IN0301001",
-    "tips": "Trauks",
-    "apakstips": "Trauki",
-    "nosaukums": "Liela izmēra kolbas",
-    "skaits": 100,
-    "komentari": "Kolbas īpaši lielām vielām"
-  },
+
   {
     "id": "IN0302001",
     "tips": "Trauks",
     "apakstips": "Stikls",
     "nosaukums": "Stikla mēģene",
     "skaits": 12,
-    "komentari": "Viegli plīstoša"
+    "komentari": ""
   },
   {
     "id": "IN0102002",
@@ -53,7 +54,7 @@
     "apakstips": "Digitālie svari",
     "nosaukums": "Digitālie svari ar Bluetooth DS-500",
     "skaits": 2,
-    "komentari": "Savienojami ar datoru vai mobilo ierīci"
+    "komentari": ""
   },
   {
     "id": "IN0201002",
@@ -109,7 +110,7 @@
     "apakstips": "Mērtrauks",
     "nosaukums": "Mērkolbas (100ml)",
     "skaits": 25,
-    "komentari": "Ar precīzu tilpuma marķējumu"
+    "komentari": ""
   },
   {
     "id": "IN0401001",
@@ -133,7 +134,7 @@
     "apakstips": "Laboratorijas halāts",
     "nosaukums": "Balts laboratorijas halāts (L)",
     "skaits": 25,
-    "komentari": "100% kokvilna, ar pogām"
+    "komentari": ""
   },
   {
     "id": "IN0502001",

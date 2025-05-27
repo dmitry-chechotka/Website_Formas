@@ -27,7 +27,7 @@
     "skaits": 24,
     "daudzums": 100,
     "mervienibas": "ml",
-    "komentari": "Šķīdums izveidots un sapildīts 2020.10.21"
+    "komentari": ""
   },
   {
     "id": "VI0102002",
@@ -67,7 +67,7 @@
     "skaits": 30,
     "daudzums": 100,
     "mervienibas": "ml",
-    "komentari": "Šķīdums izveidots un sapildīts 2021.03.15"
+    "komentari": ""
   },
   {
     "id": "VI0104001",
@@ -97,7 +97,7 @@
     "skaits": 12,
     "daudzums": 25,
     "mervienibas": "ml",
-    "komentari": "Krāsas maiņa pH 3.1-4.4, sarkans-dzeltens"
+    "komentari": ""
   },
   {
     "id": "VI0103003",
@@ -177,7 +177,7 @@
     "skaits": 35,
     "daudzums": 250,
     "mervienibas": "g",
-    "komentari": "Higroskopisks, kodīgs"
+    "komentari": ""
   },
   {
     "id": "VI0201003",
@@ -187,6 +187,6 @@
     "skaits": 12,
     "daudzums": 250,
     "mervienibas": "ml",
-    "komentari": "Uzliesmojošs, uzglabāt vēsā vietā"
+    "komentari": ""
   }
 ]
