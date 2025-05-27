@@ -43,7 +43,7 @@ function render() {
     data = [...dataCache.vielas, ...dataCache.inventars];
   }
 
-  // Apply search filter
+  // Add search filter
   if (currentSearch.trim()) {
     const query = currentSearch.toLowerCase();
     data = data.filter((row) =>
@@ -53,7 +53,7 @@ function render() {
     );
   }
 
-  // Sort by ID (string sort works because your IDs are structured)
+  // Sort by ID
   data.sort((a, b) => a.id.localeCompare(b.id));
 
   renderTable(data);
@@ -72,7 +72,7 @@ function renderTable(data) {
     return;
   }
 
-  // Define the full column order explicitly
+  // Define the full column order & ID
   const columns = [
     'id',
     'tips',
